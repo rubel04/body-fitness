@@ -16,6 +16,18 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+.primary-title{
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+}
+.primary-description{
+  color: #FFFFFF80;
+  font-size: 16px;
+}
+.text-center{
+  text-align: center;
+}
 
 .btn-primary {
   font-size: 18px;
@@ -74,6 +86,9 @@ body {
   font-weight: 900;
   margin: 0;
 }
+.banner-description{
+  color: #FFFFFF80;
+}
 .banner-btn-container{
   display: flex;
   gap: 18px;
@@ -89,28 +104,73 @@ body {
 }
 
 
+/* habit section styles */
+.habit-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3.5rem;
+}
+.habit-item{
+  text-align: center;
+}
+.habit-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.habit-img{
+  border-radius: 100%;
+}
 
+/* extra mile section */
+.extra-mile-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  border-radius: 18px;
+}
+.extra-mile-content{
+  padding: 40px;
+}
+
+.extra-mile-images{
+  padding: 30px;
+  margin-left: 165px;
+}
+.mile-img{
+  width: 445px;
+  border-radius: 18px;
+  /* padding: 30px; */
+}
 
 
 
 
 /* small device responsive */
 @media screen and (max-width: 576px) {
+
+  .primary-title{
+    font-size: 2rem;
+  }
   .nav-items {
     display: none;
   }
-
 
     /* banner section */
     .banner-section{
       display: block;
     }
-
     .banner-content{
       width: 100%;
     }
-    
     .banner-title{
       font-size: 3rem;
+    }
+
+    /* habit section */
+    .habit-container{
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
     }
 }
