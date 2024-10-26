@@ -1,6 +1,6 @@
 /* shared styles */
 @import url("https://fonts.cdnfonts.com/css/miama");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
   color: white;
@@ -9,7 +9,6 @@ body {
 .inter-font {
   font-family: "Inter", sans-serif;
 }
-
 .max-width {
   max-width: 1060px;
   margin: 0 auto;
@@ -25,14 +24,13 @@ body {
 .text-center {
   text-align: center;
 }
-
 .btn-primary {
   font-size: 18px;
   font-weight: 600;
   color: white;
   background-color: #e6533c;
   padding: 1rem 3rem;
-  border-radius: 42px;
+  border-radius: 2.8rem;
 }
 
 /* nav related styles */
@@ -44,23 +42,23 @@ body {
 }
 .nav-name {
   color: rgb(230, 83, 60);
-  font-size: 36px;
+  font-size: 2.4rem;
   font-weight: 800;
   font-style: italic;
 }
-.fa-bars{
+.menubar {
   display: none;
 }
 .nav-items {
   display: flex;
-  gap: 47px;
+  gap: 3rem;
   align-items: center;
   list-style: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 39px;
+  border-radius: 2.5rem;
   padding: 8px;
 }
-.home{
+.home {
   background-color: #e6533c;
   padding: 8px 20px;
   border-radius: 3rem;
@@ -103,16 +101,55 @@ h1 span {
 }
 .banner-btn-container {
   display: flex;
-  gap: 18px;
+  gap: 1.2rem;
 }
 .banner-btn {
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 600;
   background-color: black;
   color: white;
-  padding: 16px 40px;
+  padding: 1rem 3rem;
   border: 1px solid white;
-  border-radius: 42px;
+  border-radius: 2.6rem;
+}
+.banner-img-section {
+  position: relative;
+}
+.banner-img-box {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+.box-red{
+  background-color: #E6533C;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+.box-title1{
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+.box-title2{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+.box-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 1.5rem;
+  left: -100px;
+  bottom: 40px;
+}
+.box-2 {
+  padding: 0.3rem 1.25rem;
+  right: -60px;
+  top: 90px;
 }
 
 /* habit section styles */
@@ -128,7 +165,7 @@ h1 span {
   text-align: center;
 }
 .habit-title {
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 600;
   margin-top: 2rem;
 }
@@ -142,27 +179,27 @@ h1 span {
   align-items: center;
   justify-content: space-between;
   background-color: #222222;
-  border-radius: 18px;
+  border-radius: 1.12rem;
   margin: 6rem auto;
 }
 .extra-mile-content {
-  padding: 40px;
+  padding: 2.8rem;
 }
 
 .extra-mile-images {
-  padding: 30px;
-  margin-left: 165px;
+  padding: 2rem;
+  /* margin-left: 165px; */
 }
 .mile-img {
-  width: 445px;
-  border-radius: 18px;
+  width: 23rem;
+  border-radius: 1.12rem;
   /* padding: 30px; */
 }
 
 /* BMI styles */
 .bmi-section {
   background: rgb(34, 34, 34);
-  padding: 50px;
+  padding: 3rem;
   margin: 6rem 0;
 }
 .bmi-container {
@@ -182,22 +219,21 @@ table {
 td,
 th {
   color: #ffffff80;
-  padding: 15px;
+  padding: 1rem;
   border: 1px solid #ffffff80;
 }
 th {
   color: white;
 }
 form {
-  margin-bottom: 34px;
+  margin-bottom: 2rem;
 }
 form input,
 select {
-  padding: 20px;
+  padding: 1.25rem;
   width: 100%;
   margin: 5px;
   border: none;
-  /* color: white; */
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -205,7 +241,7 @@ select {
 .input-items {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: calc(100 - 18px); */
 }
 
 /* Team styles */
@@ -245,7 +281,7 @@ footer {
 }
 .footer-section {
   display: flex;
-  padding: 60px;
+  padding: 4rem;
 }
 .footer-fitness {
   color: rgb(230, 83, 60);
@@ -312,13 +348,14 @@ footer {
 
 /* small device responsive */
 @media screen and (max-width: 576px) {
+  /* shared styles */
   .primary-title {
     font-size: 2rem;
   }
   .nav-items {
     display: none;
   }
-  .fa-bars{
+  .menubar {
     display: block;
   }
 
@@ -329,6 +366,7 @@ footer {
   .banner-content {
     width: 100%;
   }
+
   .banner-title {
     font-size: 3rem;
   }
@@ -354,7 +392,16 @@ footer {
   }
 
   /* BMI styles */
+  .bmi-section {
+    padding: 1rem;
+  }
   .bmi-container {
+    display: block;
+  }
+  .bmi-calculator {
+    width: 100%;
+  }
+  .input-items {
     display: block;
   }
 
